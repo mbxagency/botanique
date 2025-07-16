@@ -3,9 +3,9 @@ let currentSlide = 0;
 let currentLightboxSlide = 0;
 const slides = document.querySelectorAll('.slide');
 const galleryImages = [
-    'img/ap6.jpg', 'img/ap7.jpg', 'img/ap8.jpg', 'img/ap9.jpg', 'img/ap10.jpg', 'img/ap11.jpg',
-    'img/ap12.jpg', 'img/ap13.jpg', 'img/ap14.jpg', 'img/ap15.jpg', 'img/ap16.jpg', 'img/ap17.jpg',
-    'img/ap18.jpg', 'img/ap19.jpg', 'img/ap20.jpg', 'img/ap21.jpg', 'img/planta.jpeg'
+    'ap6.jpg', 'ap7.jpg', 'ap8.jpg', 'ap9.jpg', 'ap10.jpg', 'ap11.jpg',
+    'ap12.jpg', 'ap13.jpg', 'ap14.jpg', 'ap15.jpg', 'ap16.jpg', 'ap17.jpg',
+    'ap18.jpg', 'ap19.jpg', 'ap20.jpg', 'ap21.jpg', 'planta.jpeg'
 ];
 
 // Inicialização

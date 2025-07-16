@@ -25,19 +25,19 @@
     <section class="hero">
         <div class="hero-slider" id="heroSlider">
             <div class="slide active">
-                <img src="img/ap1.jpg" alt="Apartamento Botanique - Sala de estar">
+                <img src="ap1.jpg" alt="Apartamento Botanique - Sala de estar">
             </div>
             <div class="slide">
-                <img src="img/ap2.jpg" alt="Apartamento Botanique - Cozinha americana">
+                <img src="ap2.jpg" alt="Apartamento Botanique - Cozinha americana">
             </div>
             <div class="slide">
-                <img src="img/ap3.jpg" alt="Apartamento Botanique - Quarto principal">
+                <img src="ap3.jpg" alt="Apartamento Botanique - Quarto principal">
             </div>
             <div class="slide">
-                <img src="img/ap4.jpg" alt="Apartamento Botanique - Sacada">
+                <img src="ap4.jpg" alt="Apartamento Botanique - Sacada">
             </div>
             <div class="slide">
-                <img src="img/ap5.jpg" alt="Apartamento Botanique - Vista">
+                <img src="ap5.jpg" alt="Apartamento Botanique - Vista">
             </div>
         </div>
         
@@ -208,7 +208,7 @@
                 <div class="floor-plan">
                     <h3>Planta do Apartamento</h3>
                     <div class="floor-plan-image" onclick="openLightbox(16)">
-                        <img src="img/planta.jpeg" alt="Planta do Apartamento Botanique">
+                        <img src="planta.jpeg" alt="Planta do Apartamento Botanique">
                         <div class="floor-plan-overlay">
                             <i class="fas fa-expand"></i>
                             <span>Clique para ampliar</span>
@@ -256,53 +256,129 @@
     <!-- Room Layout Suggestion -->
     <section class="room-layout">
         <div class="container">
-            <h2>Sugestão de Layout</h2>
+            <h2>Layout do Quarto 2</h2>
             <div class="layout-content">
-                <div class="layout-info">
-                    <h3>Quarto 2 - Layout Otimizado</h3>
-                    <p>Dimensões: 3,20m x 2,70m</p>
-                    <div class="layout-features">
-                        <div class="layout-feature">
-                            <i class="fas fa-bed"></i>
-                            <span>Cama Queen (1,60m x 2,00m)</span>
-                        </div>
-                        <div class="layout-feature">
-                            <i class="fas fa-door-open"></i>
-                            <span>Porta de entrada</span>
-                        </div>
-                        <div class="layout-feature">
-                            <i class="fas fa-window-maximize"></i>
-                            <span>Janela para ventilação</span>
-                        </div>
-                        <div class="layout-feature">
-                            <i class="fas fa-tshirt"></i>
-                            <span>Espaço para guarda-roupa</span>
+                <div class="layout-header">
+                    <div class="room-specs">
+                        <h3>Quarto 2 - Suíte</h3>
+                        <div class="specs-grid">
+                            <div class="spec-item">
+                                <i class="fas fa-ruler-combined"></i>
+                                <div>
+                                    <strong>3,20m x 2,70m</strong>
+                                    <span>Dimensões</span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-bed"></i>
+                                <div>
+                                    <strong>Cama Queen</strong>
+                                    <span>1,60m x 2,00m</span>
+                                </div>
+                            </div>
+                            <div class="spec-item">
+                                <i class="fas fa-tshirt"></i>
+                                <div>
+                                    <strong>Guarda-roupa</strong>
+                                    <span>Espaço dedicado</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 
-                <div class="layout-diagram">
-                    <h4>Layout Sugerido</h4>
-                    <div class="room-diagram">
-                        <div class="room-outline">
-                            <div class="room-dimensions">
-                                <span class="width">3,20m</span>
-                                <span class="height">2,70m</span>
+                <div class="layout-visualization">
+                    <div class="room-floor-plan">
+                        <div class="floor-plan-header">
+                            <h4>Planta do Quarto</h4>
+                            <div class="scale-indicator">
+                                <span>Escala 1:50</span>
                             </div>
-                            
-                            <div class="room-elements">
-                                <div class="bed" title="Cama Queen 1,60m x 2,00m">
-                                    <i class="fas fa-bed"></i>
+                        </div>
+                        
+                        <div class="room-container">
+                            <div class="room-walls">
+                                <div class="room-dimensions">
+                                    <span class="dimension width">3,20m</span>
+                                    <span class="dimension height">2,70m</span>
                                 </div>
-                                <div class="door" title="Porta">
-                                    <i class="fas fa-door-open"></i>
+                                
+                                <div class="room-furniture">
+                                    <div class="furniture bed" data-tooltip="Cama Queen 1,60m x 2,00m">
+                                        <div class="furniture-icon">
+                                            <i class="fas fa-bed"></i>
+                                        </div>
+                                        <div class="furniture-label">Cama</div>
+                                    </div>
+                                    
+                                    <div class="furniture wardrobe" data-tooltip="Guarda-roupa embutido">
+                                        <div class="furniture-icon">
+                                            <i class="fas fa-tshirt"></i>
+                                        </div>
+                                        <div class="furniture-label">Guarda-roupa</div>
+                                    </div>
+                                    
+                                    <div class="furniture door" data-tooltip="Porta de entrada">
+                                        <div class="furniture-icon">
+                                            <i class="fas fa-door-open"></i>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="furniture window" data-tooltip="Janela para ventilação">
+                                        <div class="furniture-icon">
+                                            <i class="fas fa-window-maximize"></i>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="window" title="Janela">
-                                    <i class="fas fa-window-maximize"></i>
-                                </div>
-                                <div class="wardrobe" title="Guarda-roupa">
-                                    <i class="fas fa-tshirt"></i>
-                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="furniture-legend">
+                            <div class="legend-item">
+                                <div class="legend-color bed-color"></div>
+                                <span>Cama Queen</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color wardrobe-color"></div>
+                                <span>Guarda-roupa</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color door-color"></div>
+                                <span>Porta</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="legend-color window-color"></div>
+                                <span>Janela</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="room-features">
+                        <h4>Características do Ambiente</h4>
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Ventilação natural com janela</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Iluminação adequada</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Espaço para cama queen confortável</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Área para guarda-roupa</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Circulação otimizada</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Privacidade garantida</span>
                             </div>
                         </div>
                     </div>
@@ -443,7 +519,7 @@
                     </div>
                     <div class="map-container">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.1234567890123!2d-49.23456789012345!3d-25.45678901234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce1234567890%3A0xabcdef1234567890!2sAv.%20Prefeito%20Maur%C3%ADcio%20Fruet%2C%201270%20-%20Jardim%20Bot%C3%A2nico%2C%20Curitiba%20-%20PR%2C%2082900-010!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
+                            src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Av.+Prefeito+Mauricio+Fruet+1270,Jardim+Botanico,Curitiba,PR"
                             width="100%" 
                             height="300" 
                             style="border:0; border-radius: 15px;" 
@@ -531,7 +607,7 @@
                             <p>Via BR-116 e Av. República Argentina</p>
                         </div>
                         <div class="route-map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3602.1234567890123!2d-49.23456789012345!3d-25.45678901234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce1234567890%3A0xabcdef1234567890!2sHospital%20Cajuru%20-%20Curitiba%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1234567890123" width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Hospital+Cajuru,Curitiba,PR" width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -555,7 +631,7 @@
                             <p>Via Av. Prefeito Maurício Fruet</p>
                         </div>
                         <div class="route-map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3602.1234567890123!2d-49.23456789012345!3d-25.45678901234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce1234567890%3A0xabcdef1234567890!2sJockey%20Plaza%20-%20Curitiba%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1234567890123" width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Jockey+Plaza,Curitiba,PR" width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -579,7 +655,7 @@
                             <p>Via BR-116 e Av. Rui Barbosa</p>
                         </div>
                         <div class="route-map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3602.1234567890123!2d-49.23456789012345!3d-25.45678901234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce1234567890%3A0xabcdef1234567890!2sAeroporto%20Afonso%20Pena%20-%20Curitiba%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1234567890123" width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Aeroporto+Afonso+Pena,Curitiba,PR" width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -603,7 +679,7 @@
                             <p>Via Av. Prefeito Maurício Fruet</p>
                         </div>
                         <div class="route-map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3602.1234567890123!2d-49.23456789012345!3d-25.45678901234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce1234567890%3A0xabcdef1234567890!2sAv.%20Prefeito%20Maur%C3%ADcio%20Fruet%2C%201270%20-%20Jardim%20Bot%C3%A2nico%2C%20Curitiba%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1234567890123" width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Centro+Curitiba,PR" width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -627,7 +703,7 @@
                             <p>Via BR-277 e PR-508</p>
                         </div>
                         <div class="route-map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d3602.1234567890123!2d-49.23456789012345!3d-25.45678901234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce1234567890%3A0xabcdef1234567890!2sMatinhos%20-%20PR!5e0!3m2!1spt-BR!2sbr!4v1234567890123" width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
+                            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8&q=Matinhos,PR" width="100%" height="150" style="border:0; border-radius: 8px;" allowfullscreen="" loading="lazy"></iframe>
                         </div>
                     </div>
                 </div>
@@ -645,8 +721,8 @@
                         <i class="fas fa-tree"></i>
                     </div>
                     <div class="development-info">
-                        <h3>Parque Autódromo</h3>
-                        <p>Um dos maiores parques urbanos de Curitiba, com 1,5 milhão de m² de área verde. O Parque Autódromo oferece trilhas para caminhada, ciclovias, quadras esportivas, playgrounds e áreas de convivência. Localizado a apenas 2km do apartamento, é perfeito para atividades ao ar livre e momentos de lazer em família.</p>
+                        <h3>Parc Autódromo</h3>
+                        <p>Um dos maiores parques urbanos de Curitiba, com 1,5 milhão de m² de área verde. O Parc Autódromo oferece trilhas para caminhada, ciclovias, quadras esportivas, playgrounds e áreas de convivência. Localizado a apenas 2km do apartamento, é perfeito para atividades ao ar livre e momentos de lazer em família.</p>
                         <div class="development-highlights">
                             <span><i class="fas fa-walking"></i> Trilhas para caminhada</span>
                             <span><i class="fas fa-bicycle"></i> Ciclovias</span>
@@ -678,12 +754,92 @@
                     </div>
                     <div class="development-info">
                         <h3>Valorização Imobiliária</h3>
-                        <p>A região do Jardim Botânico está em constante valorização, com novos empreendimentos comerciais e residenciais sendo construídos. A proximidade com o Parque Autódromo e o novo terminal de ônibus torna esta área ainda mais atrativa para investimentos imobiliários, garantindo excelente potencial de valorização para o futuro.</p>
+                        <p>A região do Jardim Botânico está em constante valorização, com novos empreendimentos comerciais e residenciais sendo construídos. A proximidade com o Parc Autódromo e o novo terminal de ônibus torna esta área ainda mais atrativa para investimentos imobiliários, garantindo excelente potencial de valorização para o futuro.</p>
                         <div class="development-highlights">
                             <span><i class="fas fa-home"></i> Novos empreendimentos</span>
                             <span><i class="fas fa-shopping-bag"></i> Comércio em expansão</span>
                             <span><i class="fas fa-arrow-up"></i> Valorização crescente</span>
                             <span><i class="fas fa-star"></i> Localização premium</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="development-item">
+                    <div class="development-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="development-info">
+                        <h3>Infraestrutura Comercial</h3>
+                        <p>O Jardim Botânico possui uma infraestrutura comercial completa e diversificada, com mais de 150 estabelecimentos comerciais na região. A proximidade com o apartamento garante praticidade para o dia a dia, com opções de qualidade para todas as necessidades.</p>
+                        <div class="development-highlights">
+                            <span><i class="fas fa-shopping-cart"></i> 25+ mercados e supermercados</span>
+                            <span><i class="fas fa-bread-slice"></i> 18 padarias e confeitarias</span>
+                            <span><i class="fas fa-utensils"></i> 45+ restaurantes e lanchonetes</span>
+                            <span><i class="fas fa-pills"></i> 12 farmácias e drogarias</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="development-item">
+                    <div class="development-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="development-info">
+                        <h3>Educação de Qualidade</h3>
+                        <p>A região oferece excelentes opções educacionais, desde escolas infantis até universidades renomadas. Com fácil acesso a instituições públicas e particulares, o Jardim Botânico é ideal para famílias que valorizam a educação.</p>
+                        <div class="development-highlights">
+                            <span><i class="fas fa-baby"></i> 8 escolas infantis</span>
+                            <span><i class="fas fa-child"></i> 12 escolas de ensino fundamental</span>
+                            <span><i class="fas fa-user-graduate"></i> 6 colégios de ensino médio</span>
+                            <span><i class="fas fa-university"></i> 3 universidades próximas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="development-item">
+                    <div class="development-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="development-info">
+                        <h3>Saúde e Bem-estar</h3>
+                        <p>A região conta com uma rede completa de serviços de saúde, incluindo hospitais, clínicas especializadas e unidades básicas de saúde. A proximidade com importantes centros médicos garante tranquilidade para os moradores.</p>
+                        <div class="development-highlights">
+                            <span><i class="fas fa-hospital"></i> 3 hospitais principais</span>
+                            <span><i class="fas fa-stethoscope"></i> 15+ clínicas médicas</span>
+                            <span><i class="fas fa-tooth"></i> 8 consultórios odontológicos</span>
+                            <span><i class="fas fa-dumbbell"></i> 6 academias e centros esportivos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="development-item">
+                    <div class="development-icon">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <div class="development-info">
+                        <h3>Transporte e Mobilidade</h3>
+                        <p>O Jardim Botânico possui excelente conectividade com toda Curitiba através de uma rede de transporte público eficiente. Com múltiplas linhas de ônibus e integração com o sistema BRT, o deslocamento é rápido e prático.</p>
+                        <div class="development-highlights">
+                            <span><i class="fas fa-route"></i> 12 linhas de ônibus</span>
+                            <span><i class="fas fa-subway"></i> Integração BRT</span>
+                            <span><i class="fas fa-taxi"></i> 3 terminais próximos</span>
+                            <span><i class="fas fa-car"></i> Acesso fácil às principais vias</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="development-item">
+                    <div class="development-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="development-info">
+                        <h3>Estatísticas do Bairro</h3>
+                        <p>O Jardim Botânico é um dos bairros mais valorizados de Curitiba, com indicadores socioeconômicos superiores à média da cidade. A região oferece excelente qualidade de vida e infraestrutura completa.</p>
+                        <div class="development-highlights">
+                            <span><i class="fas fa-users"></i> 45.000+ habitantes</span>
+                            <span><i class="fas fa-home"></i> 15.000+ domicílios</span>
+                            <span><i class="fas fa-star"></i> IDH 0,850 (alto)</span>
+                            <span><i class="fas fa-arrow-up"></i> 12% valorização anual</span>
                         </div>
                     </div>
                 </div>
@@ -748,52 +904,52 @@
             <h2>Galeria de Fotos</h2>
             <div class="gallery-grid">
                 <div class="gallery-item" onclick="openLightbox(0)">
-                    <img src="img/ap6.jpg" alt="Apartamento Botanique">
+                    <img src="ap6.jpg" alt="Apartamento Botanique">
                 </div>
                 <div class="gallery-item" onclick="openLightbox(1)">
-                    <img src="img/ap7.jpg" alt="Apartamento Botanique">
+                    <img src="ap7.jpg" alt="Apartamento Botanique">
                 </div>
                 <div class="gallery-item" onclick="openLightbox(2)">
-                    <img src="img/ap8.jpg" alt="Apartamento Botanique">
+                    <img src="ap8.jpg" alt="Apartamento Botanique">
                 </div>
                 <div class="gallery-item" onclick="openLightbox(3)">
-                    <img src="img/ap9.jpg" alt="Apartamento Botanique">
+                    <img src="ap9.jpg" alt="Apartamento Botanique">
                 </div>
                 <div class="gallery-item" onclick="openLightbox(4)">
-                    <img src="img/ap10.jpg" alt="Apartamento Botanique">
+                    <img src="ap10.jpg" alt="Apartamento Botanique">
                 </div>
                 <div class="gallery-item" onclick="openLightbox(5)">
-                    <img src="img/ap11.jpg" alt="Apartamento Botanique">
+                    <img src="ap11.jpg" alt="Apartamento Botanique">
                 </div>
                 <div class="gallery-item" onclick="openLightbox(6)">
-                    <img src="img/ap12.jpg" alt="Apartamento Botanique">
+                    <img src="ap12.jpg" alt="Apartamento Botanique">
                 </div>
                 <div class="gallery-item" onclick="openLightbox(7)">
-                    <img src="img/ap13.jpg" alt="Apartamento Botanique">
+                    <img src="ap13.jpg" alt="Apartamento Botanique">
                 </div>
                 <div class="gallery-item" onclick="openLightbox(8)">
-                    <img src="img/ap14.jpg" alt="Apartamento Botanique">
+                    <img src="ap14.jpg" alt="Apartamento Botanique">
                 </div>
                 <div class="gallery-item" onclick="openLightbox(9)">
-                    <img src="img/ap15.jpg" alt="Apartamento Botanique">
+                    <img src="ap15.jpg" alt="Apartamento Botanique">
                 </div>
                 <div class="gallery-item" onclick="openLightbox(10)">
-                    <img src="img/ap16.jpg" alt="Apartamento Botanique">
+                    <img src="ap16.jpg" alt="Apartamento Botanique">
                 </div>
                 <div class="gallery-item" onclick="openLightbox(11)">
-                    <img src="img/ap17.jpg" alt="Apartamento Botanique">
+                    <img src="ap17.jpg" alt="Apartamento Botanique">
                 </div>
                 <div class="gallery-item" onclick="openLightbox(12)">
-                    <img src="img/ap18.jpg" alt="Apartamento Botanique">
+                    <img src="ap18.jpg" alt="Apartamento Botanique">
                 </div>
                 <div class="gallery-item" onclick="openLightbox(13)">
-                    <img src="img/ap19.jpg" alt="Apartamento Botanique">
+                    <img src="ap19.jpg" alt="Apartamento Botanique">
                 </div>
                 <div class="gallery-item" onclick="openLightbox(14)">
-                    <img src="img/ap20.jpg" alt="Apartamento Botanique">
+                    <img src="ap20.jpg" alt="Apartamento Botanique">
                 </div>
                 <div class="gallery-item" onclick="openLightbox(15)">
-                    <img src="img/ap21.jpg" alt="Apartamento Botanique">
+                    <img src="ap21.jpg" alt="Apartamento Botanique">
                 </div>
             </div>
         </div>
