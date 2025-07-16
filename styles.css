@@ -1171,8 +1171,8 @@ body {
 .furniture.bed {
     top: 0;
     left: 0;
-    width: 220px;
-    height: 230px;
+    width: 200px;
+    height: 210px;
     background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
     color: white;
 }
@@ -1189,8 +1189,8 @@ body {
 .furniture.tv-panel {
     bottom: 0;
     left: 0;
-    width: 180px;
-    height: 15px;
+    width: 150px;
+    height: 10px;
     background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
     color: white;
     border: 3px solid #e55a2b;
@@ -2621,17 +2621,17 @@ button:focus, .gallery-item:focus {
     }
     
     .furniture.bed {
-        width: 170px;
-        height: 180px;
-        top: 10px;
-        left: 10px;
+        width: 150px;
+        height: 160px;
+        top: 2px;
+        left: 2px;
     }
     
     .furniture.wardrobe {
         width: 60px;
         height: 180px;
-        top: 10px;
-        right: 10px;
+        top: 2px;
+        right: 2px;
     }
     
     .furniture.door {
@@ -2903,24 +2903,24 @@ button:focus, .gallery-item:focus {
     }
     
     .furniture.bed {
-        width: 140px;
-        height: 150px;
-        top: 5px;
-        left: 5px;
+        width: 150px;
+        height: 160px;
+        top: 2px;
+        left: 2px;
     }
 
     .furniture.wardrobe {
         width: 40px;
         height: 140px;
-        top: 5px;
-        right: 5px;
+        top: 2px;
+        right: 2px;
     }
 
     .furniture.tv-panel {
-        width: 180px;
-        height: 15px;
-        bottom: 5px;
-        left: 5px;
+        width: 150px;
+        height: 10px;
+        bottom: 2px;
+        left: 2px;
         border: 2px solid #e55a2b;
         box-shadow: 0 1px 4px rgba(255, 107, 53, 0.3);
     }
