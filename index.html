@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apartamento Botanique - Jardim Botânico | Curitiba</title>
+    <meta name="description" content="Apartamento de luxo no Edifício Botanique, Jardim Botânico, Curitiba. ~80m², 2 quartos, 1 suíte, 2 vagas. Vista para Serra do Mar.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <h1 class="logo">Residencial Botanique</h1>
+            <div class="price-tag">
+                <span class="price">R$ 729.000</span>
+                <span class="condo">Condomínio: R$ 254,10</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-slider" id="heroSlider">
+            <div class="slide active">
+                <img src="ap1.jpg" alt="Apartamento Botanique - Sala de estar">
+            </div>
+            <div class="slide">
+                <img src="ap2.jpg" alt="Apartamento Botanique - Cozinha americana">
+            </div>
+            <div class="slide">
+                <img src="ap3.jpg" alt="Apartamento Botanique - Quarto principal">
+            </div>
+            <div class="slide">
+                <img src="ap4.jpg" alt="Apartamento Botanique - Sacada">
+            </div>
+            <div class="slide">
+                <img src="ap5.jpg" alt="Apartamento Botanique - Vista">
+            </div>
+        </div>
+        
+        <div class="slider-controls">
+            <button class="slider-btn prev" onclick="changeSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="slider-dots" id="sliderDots"></div>
+            <button class="slider-btn next" onclick="changeSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <h2>Apartamento de Luxo</h2>
+                <h3>Edifício Botanique</h3>
+                <p>Jardim Botânico • Curitiba</p>
+                <div class="cta-buttons">
+                    <button class="btn-primary" onclick="openWhatsApp()">
+                        <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                    </button>
+                    <button class="btn-secondary" onclick="callPhone()">
+                        <i class="fas fa-phone"></i> Ligar Agora
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info -->
+    <section class="quick-info">
+        <div class="info-grid">
+            <div class="info-item">
+                <i class="fas fa-ruler-combined"></i>
+                <span>~80m²</span>
+                <small>Área Privativa</small>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-bed"></i>
+                <span>2</span>
+                <small>Quartos</small>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-shower"></i>
+                <span>1</span>
+                <small>Suíte</small>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-car"></i>
+                <span>2</span>
+                <small>Vagas</small>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-bath"></i>
+                <span>2</span>
+                <small>Banheiros</small>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-calendar"></i>
+                <span>2019</span>
+                <small>Construção</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Condominium Details -->
+    <section class="condominium-details">
+        <div class="container">
+            <h2>Detalhes do Condomínio</h2>
+            <div class="condo-content">
+                <div class="condo-highlight">
+                    <div class="condo-fund">
+                        <i class="fas fa-piggy-bank"></i>
+                        <h3>R$ 90.000</h3>
+                        <p>Em caixa para obras de melhoria, pintura e manutenção</p>
+                    </div>
+                    
+                    <div class="condo-value-highlight">
+                        <i class="fas fa-star"></i>
+                        <h3>Melhor Custo-Benefício</h3>
+                        <p>Um dos condomínios mais baratos de Curitiba com excelente localização</p>
+                        <div class="value-badge">
+                            <span>R$ 254,10</span>
+                            <small>Total Mensal</small>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="condo-breakdown">
+                    <div class="condo-section">
+                        <h3>Valores Fixos</h3>
+                        <div class="condo-items">
+                            <div class="condo-item fixed">
+                                <div class="condo-item-header">
+                                    <i class="fas fa-home"></i>
+                                    <span>Quota Mensal</span>
+                                </div>
+                                <div class="condo-item-value">R$ 231,00</div>
+                            </div>
+                            
+                            <div class="condo-item fixed">
+                                <div class="condo-item-header">
+                                    <i class="fas fa-tools"></i>
+                                    <span>Fundo de Reserva</span>
+                                </div>
+                                <div class="condo-item-value">R$ 23,10</div>
+                            </div>
+                            
+                            <div class="condo-item fixed-total">
+                                <div class="condo-item-header">
+                                    <i class="fas fa-lock"></i>
+                                    <span>Total Fixo</span>
+                                </div>
+                                <div class="condo-item-value">R$ 254,10</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="condo-section">
+                        <h3>Consumo - Última Fatura</h3>
+                        <div class="condo-items">
+                            <div class="condo-item variable">
+                                <div class="condo-item-header">
+                                    <i class="fas fa-tint"></i>
+                                    <span>Taxa de Água</span>
+                                </div>
+                                <div class="condo-item-value">R$ 101,92</div>
+                            </div>
+                            
+                            <div class="condo-item variable">
+                                <div class="condo-item-header">
+                                    <i class="fas fa-fire"></i>
+                                    <span>Gás - Consumo</span>
+                                </div>
+                                <div class="condo-item-value">R$ 133,08</div>
+                            </div>
+                            
+                            <div class="condo-item variable-total">
+                                <div class="condo-item-header">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Total Variável</span>
+                                </div>
+                                <div class="condo-item-value">R$ 235,00</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="condo-section">
+                        <div class="condo-item grand-total">
+                            <div class="condo-item-header">
+                                <i class="fas fa-calculator"></i>
+                                <span>Total Geral Mensal</span>
+                            </div>
+                            <div class="condo-item-value">R$ 489,10</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apartment Details -->
+    <section class="apartment-details">
+        <div class="container">
+            <h2>Detalhes do Apartamento</h2>
+            <div class="apartment-content">
+                <div class="floor-plan">
+                    <h3>Planta do Apartamento</h3>
+                    <div class="floor-plan-image" onclick="openLightbox(16)">
+                        <img src="planta.jpeg" alt="Planta do Apartamento Botanique">
+                        <div class="floor-plan-overlay">
+                            <i class="fas fa-expand"></i>
+                            <span>Clique para ampliar</span>
+                        </div>
+                    </div>
+                </div>
+                
+
+                
+                <div class="total-area">
+                    <h3>Área Total</h3>
+                    <div class="area-breakdown">
+                        <div class="area-item">
+                            <i class="fas fa-home"></i>
+                            <div class="area-info">
+                                <h4>Área Privativa</h4>
+                                <span class="area-value">~80m²</span>
+                                <small>Apartamento</small>
+                            </div>
+                        </div>
+                        
+                        <div class="area-item">
+                            <i class="fas fa-car"></i>
+                            <div class="area-info">
+                                <h4>Vagas Privativas</h4>
+                                <span class="area-value">2 vagas</span>
+                                <small>Cobertas</small>
+                            </div>
+                        </div>
+                        
+                        <div class="area-item total">
+                            <i class="fas fa-calculator"></i>
+                            <div class="area-info">
+                                <h4>Área Total</h4>
+                                <span class="area-value">113m²</span>
+                                <small>Incluindo vagas</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Room Layout Suggestion -->
+    <section class="room-layout">
+        <div class="container">
+            <h2>Sugestão de Layout</h2>
+            <div class="layout-content">
+                <div class="layout-info">
+                    <h3>Quarto 2 - Layout Otimizado</h3>
+                    <p>Dimensões: 3,20m x 2,70m</p>
+                    <div class="layout-features">
+                        <div class="layout-feature">
+                            <i class="fas fa-bed"></i>
+                            <span>Cama Queen (1,60m x 2,00m)</span>
+                        </div>
+                        <div class="layout-feature">
+                            <i class="fas fa-door-open"></i>
+                            <span>Porta de entrada</span>
+                        </div>
+                        <div class="layout-feature">
+                            <i class="fas fa-window-maximize"></i>
+                            <span>Janela para ventilação</span>
+                        </div>
+                        <div class="layout-feature">
+                            <i class="fas fa-tshirt"></i>
+                            <span>Espaço para guarda-roupa</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="layout-diagram">
+                    <h4>Layout Sugerido</h4>
+                    <div class="room-diagram">
+                        <div class="room-outline">
+                            <div class="room-dimensions">
+                                <span class="width">3,20m</span>
+                                <span class="height">2,70m</span>
+                            </div>
+                            
+                            <div class="room-elements">
+                                <div class="bed" title="Cama Queen 1,60m x 2,00m">
+                                    <i class="fas fa-bed"></i>
+                                </div>
+                                <div class="door" title="Porta">
+                                    <i class="fas fa-door-open"></i>
+                                </div>
+                                <div class="window" title="Janela">
+                                    <i class="fas fa-window-maximize"></i>
+                                </div>
+                                <div class="wardrobe" title="Guarda-roupa">
+                                    <i class="fas fa-tshirt"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional Items -->
+    <section class="optional-items">
+        <div class="container">
+            <h2>Itens Opcionais</h2>
+            <div class="optional-content">
+                <div class="optional-description">
+                    <p>Este elegante apartamento de 2 quartos, incluindo uma suíte, está à venda e é uma excelente oportunidade para quem busca conforto, estilo e uma localização privilegiada. Situado na Av. Prefeito Maurício Fruet, 1270, no bairro Cajuru, este imóvel oferece uma área privativa de 78,81 m² e uma área total de 113,84 m², proporcionando um espaço ideal para toda a família.</p>
+                    
+                    <p>Com um projeto arquitetônico sofisticado e acabamento de altíssimo padrão, o apartamento destaca-se pelos revestimentos cerâmicos de primeira qualidade e móveis planejados que agregam funcionalidade e beleza ao ambiente. Localizado a apenas 700 metros do icônico Parque Jardim Botânico, o apartamento oferece uma vista encantadora para a natureza, promovendo uma atmosfera tranquila e relaxante.</p>
+                    
+                    <p>A ampla sacada, uma das maiores da cidade no segmento, é um verdadeiro convite ao lazer. Equipado com uma churrasqueira a carvão, este espaço é perfeito para desfrutar de momentos de descontração, seja admirando o pôr do sol ou reunindo amigos e familiares para um delicioso churrasco.</p>
+                    
+                    <p>A sala de estar, cuidadosamente decorada, oferece um ambiente de conforto e modernidade, ideal para momentos de descanso e entretenimento. Equipado com uma TV de alta definição e sistema de som de última geração, o espaço é complementado por um sofá retrátil e uma decoração refinada. A sala de jantar, com uma imponente mesa de madeira maciça para 8 pessoas, é perfeita para refeições em família ou jantares sofisticados com amigos.</p>
+                    
+                    <p>O segundo quarto foi inteligentemente projetado para atender às diversas necessidades do dia a dia, funcionando tanto como um home office quanto como um confortável quarto de hóspedes, proporcionando versatilidade e praticidade ao lar.</p>
+                    
+                    <p>Além de todos esses benefícios, o condomínio oferece uma excelente infraestrutura com academia bem equipada e churrasqueira, garantindo qualidade de vida e conveniência para os moradores. Tudo isso aliado a uma taxa de condomínio extremamente acessível.</p>
+                    
+                    <p>Se você está em busca de um apartamento que une conforto, elegância e uma localização privilegiada, este é o imóvel perfeito para você e sua família. Não perca a oportunidade de adquirir este belíssimo apartamento no Residencial Botanique. Agende uma visita e prepare-se para se encantar com cada detalhe!</p>
+                </div>
+                
+                <div class="optional-items-grid">
+                    <h3>Itens que podem ficar no apartamento (opcional)</h3>
+                    <div class="items-list">
+                        <div class="item">
+                            <i class="fas fa-wine-bottle"></i>
+                            <span>Adega de Vinhos Electrolux para 12 Garrafas com até 18°C e Controle de Temperatura - ACB12</span>
+                        </div>
+                        <div class="item">
+                            <i class="fas fa-beer"></i>
+                            <span>Cervejeira Consul Titanium para 75 latas com display digital</span>
+                        </div>
+                        <div class="item">
+                            <i class="fas fa-tv"></i>
+                            <span>TV 65" LG</span>
+                        </div>
+                        <div class="item">
+                            <i class="fas fa-tv"></i>
+                            <span>TV 49" LG</span>
+                        </div>
+                        <div class="item">
+                            <i class="fas fa-fire"></i>
+                            <span>Cooktop Brastemp 4 Bocas Duplachama Timer Touch Preto</span>
+                        </div>
+                        <div class="item">
+                            <i class="fas fa-bed"></i>
+                            <span>Cama Box</span>
+                        </div>
+                        <div class="item">
+                            <i class="fas fa-fan"></i>
+                            <span>Coifa de Parede Electrolux 90CVS 3 Velocidades</span>
+                        </div>
+                        <div class="item">
+                            <i class="fas fa-couch"></i>
+                            <span>Sofá 4 Lugares Retrátil e Reclinável Cinza</span>
+                        </div>
+                        <div class="item">
+                            <i class="fas fa-fire"></i>
+                            <span>Forno de Embutir Elétrico Brastemp 84 Litros Cor Inox Espelhado com Convecção e Timer Touch</span>
+                        </div>
+                        <div class="item">
+                            <i class="fas fa-bolt"></i>
+                            <span>Micro-ondas de Embutir 34L Philco Espelhado</span>
+                        </div>
+                        <div class="item">
+                            <i class="fas fa-thermometer-half"></i>
+                            <span>Aquecedor De Água À Gás Lorenzetti Lz 1600 Dei Inox 15 Litros Digital Bivolt</span>
+                        </div>
+                        <div class="item">
+                            <i class="fas fa-snowflake"></i>
+                            <span>Geladeira Brastemp Frost Free Duplex 375 litros</span>
+                        </div>
+                        <div class="item">
+                            <i class="fas fa-tshirt"></i>
+                            <span>Lava & Seca 11 Kg Samsung Inox</span>
+                        </div>
+                        <div class="item">
+                            <i class="fas fa-utensils"></i>
+                            <span>Mesa | Banquetas para Churrasqueira</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Region Info -->
+    <section class="region-info">
+        <div class="container">
+            <h2>A Região Jardim Botânico</h2>
+            <div class="region-content">
+                <div class="region-description">
+                    <h3>Um dos Bairros Mais Cobiçados de Curitiba</h3>
+                    <p>O Jardim Botânico é reconhecido como um dos bairros mais sofisticados e desejados de Curitiba. Localizado na região sul da cidade, oferece uma qualidade de vida excepcional com excelente infraestrutura e proximidade com as principais atrações da capital paranaense.</p>
+                    
+                    <div class="region-highlights">
+                        <div class="region-highlight">
+                            <i class="fas fa-leaf"></i>
+                            <h4>Área Verde</h4>
+                            <p>Um dos bairros com maior índice de área verde por habitante, proporcionando ar puro e tranquilidade.</p>
+                        </div>
+                        
+                        <div class="region-highlight">
+                            <i class="fas fa-graduation-cap"></i>
+                            <h4>Educação de Qualidade</h4>
+                            <p>Próximo às melhores escolas e universidades de Curitiba, incluindo a UFPR e PUCPR.</p>
+                        </div>
+                        
+                        <div class="region-highlight">
+                            <i class="fas fa-heartbeat"></i>
+                            <h4>Saúde</h4>
+                            <p>Excelente rede hospitalar com o Hospital Universitário, Hospital Pequeno Príncipe e clínicas especializadas.</p>
+                        </div>
+                        
+                        <div class="region-highlight">
+                            <i class="fas fa-shopping-bag"></i>
+                            <h4>Comércio e Lazer</h4>
+                            <p>Shopping Palladium, restaurantes gourmet, cafés e opções de entretenimento para toda a família.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="region-map">
+                    <h3>Localização Estratégica</h3>
+                    <div class="exact-address">
+                        <h4>Endereço Exato</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Av. Prefeito Maurício Fruet, 1270</p>
+                        <p>Jardim Botânico • Curitiba - PR</p>
+                        <p>CEP: 82900-010</p>
+                    </div>
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3602.1234567890123!2d-49.23456789012345!3d-25.45678901234567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94dce1234567890%3A0xabcdef1234567890!2sAv.%20Prefeito%20Maur%C3%ADcio%20Fruet%2C%201270%20-%20Jardim%20Bot%C3%A2nico%2C%20Curitiba%20-%20PR%2C%2082900-010!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
+                            width="100%" 
+                            height="300" 
+                            style="border:0; border-radius: 15px;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                    
+                    <div class="map-info">
+                        <div class="map-item">
+                            <i class="fas fa-seedling"></i>
+                            <div>
+                                <strong>Jardim Botânico</strong>
+                                <span>700m - 5 min a pé</span>
+                            </div>
+                        </div>
+                        
+                        <div class="map-item">
+                            <i class="fas fa-shopping-bag"></i>
+                            <div>
+                                <strong>Shopping Palladium</strong>
+                                <span>2km - 8 min de carro</span>
+                            </div>
+                        </div>
+                        
+                        <div class="map-item">
+                            <i class="fas fa-hospital"></i>
+                            <div>
+                                <strong>Hospital Universitário</strong>
+                                <span>1.5km - 6 min de carro</span>
+                            </div>
+                        </div>
+                        
+                        <div class="map-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>UFPR</strong>
+                                <span>2km - 8 min de carro</span>
+                            </div>
+                        </div>
+                        
+                        <div class="map-item">
+                            <i class="fas fa-bus"></i>
+                            <div>
+                                <strong>Terminal do Portão</strong>
+                                <span>1km - 4 min de carro</span>
+                            </div>
+                        </div>
+                        
+                        <div class="map-item">
+                            <i class="fas fa-plane"></i>
+                            <div>
+                                <strong>Aeroporto Afonso Pena</strong>
+                                <span>15km - 25 min de carro</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Distance Maps -->
+    <section class="distance-maps">
+        <div class="container">
+            <h2>Distâncias e Direções</h2>
+            <div class="maps-grid">
+                <div class="map-card">
+                    <div class="map-header">
+                        <i class="fas fa-hospital"></i>
+                        <h3>Hospital Cajuru</h3>
+                    </div>
+                    <div class="map-info">
+                        <div class="distance-info">
+                            <span class="distance">8,5km</span>
+                            <span class="time">15 min de carro</span>
+                        </div>
+                        <div class="direction-info">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>Norte - BR-116</span>
+                        </div>
+                        <div class="route-info">
+                            <strong>Rota para Hospital Cajuru</strong>
+                            <p>Via BR-116 e Av. República Argentina</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-card">
+                    <div class="map-header">
+                        <i class="fas fa-shopping-bag"></i>
+                        <h3>Jockey Plaza</h3>
+                    </div>
+                    <div class="map-info">
+                        <div class="distance-info">
+                            <span class="distance">3,2km</span>
+                            <span class="time">8 min de carro</span>
+                        </div>
+                        <div class="direction-info">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>Norte - Av. Prefeito Maurício Fruet</span>
+                        </div>
+                        <div class="route-info">
+                            <strong>Rota para Jockey Plaza</strong>
+                            <p>Via Av. Prefeito Maurício Fruet</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-card">
+                    <div class="map-header">
+                        <i class="fas fa-plane"></i>
+                        <h3>Aeroporto Afonso Pena</h3>
+                    </div>
+                    <div class="map-info">
+                        <div class="distance-info">
+                            <span class="distance">15km</span>
+                            <span class="time">25 min de carro</span>
+                        </div>
+                        <div class="direction-info">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>Norte - BR-116</span>
+                        </div>
+                        <div class="route-info">
+                            <strong>Rota para Aeroporto</strong>
+                            <p>Via BR-116 e Av. Rui Barbosa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-card">
+                    <div class="map-header">
+                        <i class="fas fa-city"></i>
+                        <h3>Centro da Cidade</h3>
+                    </div>
+                    <div class="map-info">
+                        <div class="distance-info">
+                            <span class="distance">4,8km</span>
+                            <span class="time">12 min de carro</span>
+                        </div>
+                        <div class="direction-info">
+                            <i class="fas fa-arrow-up"></i>
+                            <span>Norte - Av. Prefeito Maurício Fruet</span>
+                        </div>
+                        <div class="route-info">
+                            <strong>Rota para o Centro</strong>
+                            <p>Via Av. Prefeito Maurício Fruet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights -->
+    <section class="highlights">
+        <div class="container">
+            <h2>Destaques do Imóvel</h2>
+            <div class="highlights-grid">
+                <div class="highlight-item">
+                    <i class="fas fa-mountain"></i>
+                    <h3>Vista para Serra do Mar</h3>
+                    <p>Desfrute de uma vista deslumbrante da Serra do Mar diretamente da sua sacada</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-tree"></i>
+                    <h3>700m do Jardim Botânico</h3>
+                    <p>Localização privilegiada a apenas 700 metros do famoso Jardim Botânico de Curitiba</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Cozinha Americana</h3>
+                    <p>Cozinha integrada à sala de estar, perfeita para receber amigos e família</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-fire"></i>
+                    <h3>Churrasqueira</h3>
+                    <p>Sacada com churrasqueira a carvão para momentos especiais</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Academia</h3>
+                    <p>Condomínio com academia equipada para manter sua saúde em dia</p>
+                </div>
+                <div class="highlight-item">
+                    <i class="fas fa-couch"></i>
+                    <h3>Móveis Planejados</h3>
+                    <p>Todos os ambientes projetados por arquiteta com móveis planejados</p>
+                </div>
+                
+                <div class="highlight-item">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h3>Melhor Custo-Benefício</h3>
+                    <p>Um dos condomínios mais baratos de Curitiba com excelente localização e qualidade</p>
+                </div>
+                
+                <div class="highlight-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Portaria Remota</h3>
+                    <p>Sistema moderno de portaria remota para maior segurança e praticidade</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+        <div class="container">
+            <h2>Galeria de Fotos</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox(0)">
+                    <img src="ap6.jpg" alt="Apartamento Botanique">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(1)">
+                    <img src="ap7.jpg" alt="Apartamento Botanique">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(2)">
+                    <img src="ap8.jpg" alt="Apartamento Botanique">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(3)">
+                    <img src="ap9.jpg" alt="Apartamento Botanique">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(4)">
+                    <img src="ap10.jpg" alt="Apartamento Botanique">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(5)">
+                    <img src="ap11.jpg" alt="Apartamento Botanique">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(6)">
+                    <img src="ap12.jpg" alt="Apartamento Botanique">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(7)">
+                    <img src="ap13.jpg" alt="Apartamento Botanique">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(8)">
+                    <img src="ap14.jpg" alt="Apartamento Botanique">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(9)">
+                    <img src="ap15.jpg" alt="Apartamento Botanique">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(10)">
+                    <img src="ap16.jpg" alt="Apartamento Botanique">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(11)">
+                    <img src="ap17.jpg" alt="Apartamento Botanique">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(12)">
+                    <img src="ap18.jpg" alt="Apartamento Botanique">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(13)">
+                    <img src="ap19.jpg" alt="Apartamento Botanique">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(14)">
+                    <img src="ap20.jpg" alt="Apartamento Botanique">
+                </div>
+                <div class="gallery-item" onclick="openLightbox(15)">
+                    <img src="ap21.jpg" alt="Apartamento Botanique">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Amenities -->
+    <section class="amenities">
+        <div class="container">
+            <h2>O que o Condomínio Oferece</h2>
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <i class="fas fa-elevator"></i>
+                    <span>Elevador</span>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-dumbbell"></i>
+                    <span>Academia</span>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-glass-cheers"></i>
+                    <span>Salão de Festas</span>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <span>Terraço Coletivo</span>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Portaria Remota</span>
+                </div>
+                <div class="amenity-item">
+                    <i class="fas fa-parking"></i>
+                    <span>Garagem Coberta</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Interessado no Imóvel?</h2>
+            <p>Agende uma visita ou entre em contato conosco</p>
+            <div class="cta-buttons">
+                <button class="btn-primary large" onclick="openWhatsApp()">
+                    <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                </button>
+                <button class="btn-secondary large" onclick="callPhone()">
+                    <i class="fas fa-phone"></i> Ligar Agora
+                </button>
+                <button class="btn-outline large" onclick="sendEmail()">
+                    <i class="fas fa-envelope"></i> Enviar E-mail
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Apartamento Botanique</h3>
+                    <p>Jardim Botânico • Curitiba - PR</p>
+                    <p>R$ 729.000,00</p>
+                    <p>Condomínio: R$ 254,10</p>
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-phone"></i> (41) 99996-1121</p>
+                    <p><i class="fas fa-envelope"></i> vendas@axis21.com.br</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Apartamento Botanique. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+        <div class="lightbox-nav">
+            <button class="lightbox-btn prev" onclick="changeLightboxSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-btn next" onclick="changeLightboxSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 

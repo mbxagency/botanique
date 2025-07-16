@@ -1,0 +1,18 @@
+# Image files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.tiff
+*.webp
+*.svg
+
+# Screenshots
+Screenshot*.png
+
+# Keep the project structure but ignore images
+!README.md
+!index.html
+!styles.css
+!script.js 
