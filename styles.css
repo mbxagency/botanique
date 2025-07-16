@@ -1171,8 +1171,8 @@ body {
 .furniture.bed {
     top: 0;
     left: 0;
-    width: 200px;
-    height: 210px;
+    width: 150px;
+    height: 160px;
     background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
     color: white;
 }
@@ -2621,8 +2621,8 @@ button:focus, .gallery-item:focus {
     }
     
     .furniture.bed {
-        width: 150px;
-        height: 160px;
+        width: 110px;
+        height: 120px;
         top: 2px;
         left: 2px;
     }
@@ -2903,8 +2903,8 @@ button:focus, .gallery-item:focus {
     }
     
     .furniture.bed {
-        width: 150px;
-        height: 160px;
+        width: 110px;
+        height: 120px;
         top: 2px;
         left: 2px;
     }
