@@ -2605,8 +2605,8 @@ button:focus, .gallery-item:focus {
     }
     
     .room-walls {
-        max-width: 280px;
-        height: 220px;
+        max-width: 260px;
+        height: 200px;
         border-width: 3px;
     }
     
@@ -2621,17 +2621,17 @@ button:focus, .gallery-item:focus {
     }
     
     .furniture.bed {
-        width: 240px;
-        height: 250px;
-        bottom: 15px;
-        left: 15px;
+        width: 180px;
+        height: 190px;
+        top: 10px;
+        left: 10px;
     }
     
     .furniture.wardrobe {
-        width: 50px;
-        height: 35px;
-        top: 12px;
-        left: 12px;
+        width: 60px;
+        height: 180px;
+        top: 10px;
+        right: 10px;
     }
     
     .furniture.door {
@@ -2649,12 +2649,13 @@ button:focus, .gallery-item:focus {
     }
     
     .furniture-icon {
-        font-size: 1rem;
-        margin-bottom: 2px;
+        font-size: 0.8rem;
+        margin-bottom: 1px;
     }
     
     .furniture-label {
-        font-size: 0.6rem;
+        font-size: 0.5rem;
+        line-height: 1.2;
     }
     
     .furniture-legend {
@@ -2897,29 +2898,29 @@ button:focus, .gallery-item:focus {
     }
     
     .room-walls {
-        max-width: 250px;
-        height: 200px;
+        max-width: 220px;
+        height: 180px;
     }
     
     .furniture.bed {
-        width: 240px;
-        height: 250px;
-        top: 0;
-        left: 0;
+        width: 140px;
+        height: 150px;
+        top: 5px;
+        left: 5px;
     }
 
     .furniture.wardrobe {
-        width: 52px;
-        height: 210px;
-        top: 0;
-        right: 0;
+        width: 40px;
+        height: 140px;
+        top: 5px;
+        right: 5px;
     }
 
     .furniture.tv-panel {
-        width: 240px;
-        height: 20px;
-        bottom: 0;
-        left: 0;
+        width: 180px;
+        height: 15px;
+        bottom: 10px;
+        left: 10px;
         border: 2px solid #e55a2b;
         box-shadow: 0 1px 4px rgba(255, 107, 53, 0.3);
     }
