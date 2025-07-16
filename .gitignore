@@ -8,6 +8,9 @@
 *.webp
 *.svg
 
+# Image folder
+img/
+
 # Screenshots
 Screenshot*.png
 
