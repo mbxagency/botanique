@@ -1171,8 +1171,8 @@ body {
 .furniture.bed {
     top: 0;
     left: 0;
-    width: 240px;
-    height: 250px;
+    width: 220px;
+    height: 230px;
     background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
     color: white;
 }
@@ -1189,8 +1189,8 @@ body {
 .furniture.tv-panel {
     bottom: 0;
     left: 0;
-    width: 240px;
-    height: 20px;
+    width: 180px;
+    height: 15px;
     background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
     color: white;
     border: 3px solid #e55a2b;
@@ -2621,8 +2621,8 @@ button:focus, .gallery-item:focus {
     }
     
     .furniture.bed {
-        width: 180px;
-        height: 190px;
+        width: 170px;
+        height: 180px;
         top: 10px;
         left: 10px;
     }
@@ -2919,8 +2919,8 @@ button:focus, .gallery-item:focus {
     .furniture.tv-panel {
         width: 180px;
         height: 15px;
-        bottom: 10px;
-        left: 10px;
+        bottom: 5px;
+        left: 5px;
         border: 2px solid #e55a2b;
         box-shadow: 0 1px 4px rgba(255, 107, 53, 0.3);
     }
