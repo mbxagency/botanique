@@ -1169,37 +1169,56 @@ body {
 
 .region-highlight {
     display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    padding: 20px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    border-radius: 20px;
+    border-left: 5px solid #4ade80;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-align: center;
 }
 
 .region-highlight:hover {
-    transform: translateY(-3px);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
 }
 
-.region-highlight i {
-    font-size: 1.5rem;
-    color: #4ade80;
-    margin-top: 5px;
+.highlight-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #4ade80 0%, #22c55e 100%);
+    border-radius: 50%;
     flex-shrink: 0;
+    box-shadow: 0 4px 15px rgba(74, 222, 128, 0.3);
+}
+
+.highlight-icon i {
+    font-size: 1.8rem;
+    color: white;
+    margin: 0;
+}
+
+.highlight-content {
+    flex: 1;
+    text-align: left;
 }
 
 .region-highlight h4 {
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #333;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #2c5530;
 }
 
 .region-highlight p {
-    font-size: 0.95rem;
-    color: #666;
-    line-height: 1.5;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
     margin: 0;
 }
 
