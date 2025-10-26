@@ -74,7 +74,7 @@ botanique/
 - **Vagas**: 2
 - **Banheiros**: 2
 - **Ano de Construção**: 2019
-- **Preço**: R$ 729.000,00
+- **Preço**: R$ 769.000,00
 
 ### Condomínio
 - **Fundo de Reserva**: R$ 90.000 em caixa para obras de melhoria, pintura e manutenção
@@ -163,7 +163,7 @@ function openWhatsApp() {
 ### Alterar Preço
 Edite no arquivo `index.html`:
 ```html
-<span class="price">R$ 729.000</span>
+<span class="price">R$ 769.000</span>
 <span class="condo">Condomínio: R$ 355</span>
 ```
 
